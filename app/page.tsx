@@ -5,6 +5,9 @@ import { Icon } from "@iconify/react";
 import SimpleCard from "@/components/simple-card"
 import Card from "@/components/card";
 import Checkbox from "@/components/checkbox-input";
+import CardMidia from "@/components/card-midia";
+import Window from "@/components/window";
+import Chacacter from "@/components/chacacter";
 
 export default function Home(){
   return(
@@ -12,7 +15,7 @@ export default function Home(){
       <article className="w-5xl min-h-full flex flex-col my-5 mx-auto p-2 border border-white">
         <div className="w-full flex gap-2">
           <div className={`w-2/3 h-40 overflow-hidden text-white border border-white`} >
-            <img src="https://i.pinimg.com/originals/a7/f2/97/a7f2970ebe98fcbfbe94bbf780233681.gif" width={700} alt="" />
+            <img src="https://i.pinimg.com/originals/12/9c/06/129c062e7e3736fd357396a7f92658d0.gif" width={700} alt="" />
           </div>
 
           <SimpleCard details="w-1/3 h-40">
@@ -52,31 +55,53 @@ export default function Home(){
             </section>
 
             <section className="flex gap-2">
-              <Card title="chacacter customization" className="w-2/3" details="grid grid-cols-5 py-4">
-                <div className="col-span-2 flex flex-wrap justify-end gap-3">
-                  <button className="w-18 h-18 flex justify-center items-center bg-blue-700/10 border border-blue-800
+              <Card title="chacacter customization" className="w-2/3" details="grid grid-cols-5 place-items-center py-3">
+                <div className="col-span-2 flex flex-wrap justify-end my-auto gap-5">
+                  <Window title="HEADSET" trigger={
+                    <button className="w-18 h-18 flex justify-center items-center bg-blue-700/10 border border-blue-800
                   hover:bg-blue-500/20 hover:border-blue-500 cursor-pointer transition-colors">
-                    <img src="headset.png" alt="" width={50} />
-                  </button>
-                  <button className="w-18 h-18 flex justify-center items-center bg-blue-700/10 border border-blue-800
-                  hover:bg-blue-500/20 hover:border-blue-500 cursor-pointer transition-colors">
-                    <img src="hair.png" alt="" width={50} />
-                  </button>
-                  <button className="w-18 h-18 flex justify-center items-center bg-blue-700/10 border border-blue-800
-                  hover:bg-blue-500/20 hover:border-blue-500 cursor-pointer transition-colors">
-                    <img src="ring.png" alt="" width={50} />
-                  </button>
-                  <button className="w-18 h-18 flex justify-center items-center bg-blue-700/10 border border-blue-800
-                  hover:bg-blue-500/20 hover:border-blue-500 cursor-pointer transition-colors">
-                    <img src="glasses.png" alt="" width={50} />
-                  </button>
+                      <img src="headset.png" alt="" width={50} />
+                    </button>
+                  }>
+                    <p className="w-60">gosto muito de escutar musica! estou escutando sempre que posso.</p>
+                  </Window>
+                  <Window title="HAIR" align="start" trigger={
+                    <button className="w-18 h-18 flex justify-center items-center bg-blue-700/10 border border-blue-800
+                    hover:bg-blue-500/20 hover:border-blue-500 cursor-pointer transition-colors">
+                      <img src="hair.png" alt="" width={50} />
+                    </button>
+                  }>
+                    <p className="w-60">este é o meu corte de cabelo! ter cabelo grande me incomoda, entao sempre corto ele. eu mesmo sempre corto meu cabelo!</p>
+                  </Window>
+                  <Window title="RING" trigger={
+                    <button className="w-18 h-18 flex justify-center items-center bg-blue-700/10 border border-blue-800
+                    hover:bg-blue-500/20 hover:border-blue-500 cursor-pointer transition-colors">
+                      <img src="ring.png" alt="" width={50} />
+                    </button>
+                  }>
+                    <p className="w-60">gosto de usar acessorios e principalmente aneis!</p>
+                  </Window>
+                  <Window title="GLASSES" align="center" trigger={
+                    <button className="w-18 h-18 flex justify-center items-center bg-blue-700/10 border border-blue-800
+                    hover:bg-blue-500/20 hover:border-blue-500 cursor-pointer transition-colors">
+                      <img src="glasses.png" alt="" width={50} />
+                    </button>
+                  }>
+                    <p className="w-60">possuo miopia e astigmatismo, com 6 graus em cada olho! bastante, nao?</p>
+                  </Window>
                 </div>
 
                 <div className="col-span-2 flex justify-center items-center">
-                  <img src="gael.png" alt="" width={150} />
+                  <Window title='ME' align="start" trigger={
+                    <button>
+                      <Chacacter />
+                    </button>
+                  }>
+                    <p>este sou eu! fiz esta pixel art inspirada nos personagens do jogo omori!</p>
+                  </Window>
                 </div>
 
-                <div className="flex flex-col items-start gap-3">
+                <div className="flex flex-col items-start gap-5">
                   <div className="w-18 h-18 bg-blue-700/10 border border-blue-800">
 
                   </div>
@@ -86,37 +111,119 @@ export default function Home(){
                 </div>
               </Card>
 
-              <SimpleCard details="w-1/3 flex grid grid-rows-4 grid-cols-2">
-                <div className="flex flex-col items-center text-sm hover:cursor-pointer">
-                  <Icon icon="pixelarticons:folder" className="hover:bg-zinc-200/10" width={32} color="#FCC201" />
-                  <p className="hover:bg-zinc-200/10">analog horror</p>
+              <div className="w-1/3 text-white flex flex-col justify-between border border-white hover:border-blue-400 transition-colors">
+                <div className="grid grid-cols-2 grid-rows-3 gap-y-3 p-2">
+                  <Window title="/home/analog-horror" align="start" button arrow={false} trigger={
+                    <div className="group flex flex-col items-center text-sm hover:cursor-pointer">
+                      <Icon icon="pixelarticons:folder" className="group-hover:bg-zinc-200/10" width={32} color="#FCC201" />
+                      <p className="group-hover:bg-zinc-200/10">analog-horror</p>
+                    </div>
+                  }>
+                    <div className="w-96 min-h-52 flex p-2 gap-5 text-sm">
+                      <div className="flex flex-col items-center">
+                        <img src="./channels/alanzoka.webp" alt="alanzoka-webp"  width={56}/>
+                        <span>daishikawa.jpg</span>
+                      </div>
+                      <div className="flex flex-col items-center">
+                        <img src="./channels/alanzoka.webp" alt="alanzoka-webp" width={60}/>
+                        <span>zedin.jpg</span>
+                      </div>
+                    </div>
+                  </Window>
+                  <Window title="/home/analog-horror" align="start" button arrow={false} trigger={
+                    <div className="group flex flex-col items-center text-sm hover:cursor-pointer">
+                      <Icon icon="pixelarticons:folder" className="group-hover:bg-zinc-200/10" width={32} color="#FCC201" />
+                      <p className="group-hover:bg-zinc-200/10">geral</p>
+                    </div>
+                  }>
+                    <div className="w-88 min-h-52 flex p-2 gap-5 text-sm">
+                      <div className="flex flex-col items-center">
+                        <img src="./channels/alanzoka.webp" alt="alanzoka-webp"  width={60}/>
+                        <span>kleberiano.jpg</span>
+                      </div>
+                      <div className="flex flex-col items-center">
+                        <img src="./channels/alanzoka.webp" alt="alanzoka-webp" width={60}/>
+                        <span>submundo-virtual.jpg</span>
+                      </div>
+                    </div>
+                  </Window>
+                  <Window title="/home/analog-horror" align="start" button arrow={false} trigger={
+                    <div className="group flex flex-col items-center text-sm hover:cursor-pointer">
+                      <Icon icon="pixelarticons:folder" className="group-hover:bg-zinc-200/10" width={32} color="#FCC201" />
+                      <p className="group-hover:bg-zinc-200/10">gameplay</p>
+                    </div>
+                  }>
+                    <div className="w-88 min-h-52 flex p-2 gap-5 text-sm">
+                      <div className="flex flex-col items-center">
+                        <img src="./channels/alanzoka.webp" alt="alanzoka-webp"  width={60}/>
+                        <span>daishikawa.jpg</span>
+                      </div>
+                      <div className="flex flex-col items-center">
+                        <img src="./channels/alanzoka.webp" alt="alanzoka-webp" width={60}/>
+                        <span>zedin.jpg</span>
+                      </div>
+                    </div>
+                  </Window>
                 </div>
-
-                <div className="flex flex-col items-center text-sm hover:cursor-pointer">
-                  <Icon icon="pixelarticons:folder" width={32} color="#FCC201" />
-                  <p>geral</p>
+                <div className="flex border-t">
+                  <Icon className="m-1" icon={'pixelarticons:avatar-square-sharp'} width={20}/>
+                  <span className="border-l"></span>
                 </div>
-
-                <div className="flex flex-col items-center text-sm hover:cursor-pointer">
-                  <Icon icon="pixelarticons:folder" width={32} color="#FCC201" />
-                  <p>gameplay</p>
-                </div>
-              </SimpleCard>
+              </div>
             </section>
 
             <section>
-              <Card title="midia" className="w-full h-96">
-                a
+              <Card title="arquivos" className="w-full h-96" details="flex gap-2">
+                <div className="h-82 border border-blue-700">
+                  <div className="w-36 flex items-center py-0.5 pl-1 gap-1 bg-blue-700 text-white">
+                    <Icon icon={'pixelarticons:chevron-down-2'} width={20} color="fff" />
+                    <Icon icon={'pixelarticons:folder-sharp'} width={20} color="fff"/>
+                    <span>my midia</span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="flex items-center pl-7 py-1 gap-2 text-white hover:bg-blue-700/10 cursor-pointer">
+                      <Icon icon={'pixelarticons:folder-sharp'} width={20} color="fff"/>
+                      filmes
+                    </span>
+                    <span className="flex items-center pl-7 py-1 gap-2 text-white hover:bg-blue-700/10 cursor-pointer">
+                      <Icon icon={'pixelarticons:folder-sharp'} width={20} color="fff"/>
+                      series
+                    </span>
+                    <span className="flex items-center pl-7 py-1 gap-2 text-white hover:bg-blue-700/10 cursor-pointer">
+                      <Icon icon={'pixelarticons:folder-sharp'} width={20} color="fff"/>
+                      animes
+                    </span>
+                    <span className="flex items-center pl-7 py-1 gap-2 text-white hover:bg-blue-700/10 cursor-pointer">
+                      <Icon icon={'pixelarticons:folder-sharp'} width={20} color="fff"/>
+                      desenhos
+                    </span>
+                  </div>
+                </div>
+
+                <div className="w-full grid grid-cols-4 grid-rows-2 place-items-center p-2 border border-blue-700">
+                  <CardMidia />
+                  <CardMidia />
+                  <CardMidia />
+                  <CardMidia />
+                  <CardMidia />
+                  <CardMidia />
+                  <CardMidia />
+                  <CardMidia />
+                </div>
               </Card>
             </section>
 
-            <section className="flex gap-2 h-88">
+            <section className="flex gap-2">
               <SimpleCard details="w-md">
                 games
               </SimpleCard>
 
-              <Card title="my hobbies" className="w-full">
-                hobbies
+              <Card title="my hobbies" className="w-full text-white">
+                <ul className="flex flex-col gap-3 list-disc list-inside">
+                  <li><strong>artesanato</strong> - gosto de fazer artesanatos com papel e papelão, principalmente de coisas para compor a decoração do meu quarto.</li>
+                  <li><strong>edição</strong> - costumava editar nos de 2020 e 2021. atualmente faço isso por hobbie de tempos em tempos quando cai alguma inspiração!</li>
+                  <li><strong>assistir</strong> - no tempo livre gosto principalmente de maratonar series, sequência de filmes e animes! mas assisto diversos tipos de média visual, de filmes a obras de analog horror e gamplays!</li>
+                </ul>
               </Card>
             </section>
           </section>
@@ -136,11 +243,11 @@ export default function Home(){
             </SimpleCard>
 
             <Card title="my tags" details="flex flex-wrap gap-2 text-white">
-              <span className="py-2 px-3 flex items-center border border-white">romance</span>
-              <span className="py-2 px-3 flex items-center border border-white">comédia</span>
-              <span className="py-2 px-3 flex items-center border border-white">terror</span>
-              <span className="py-2 px-3 flex items-center border border-white">suspense</span>
-              <span className="py-2 px-3 flex items-center border border-white">ficçãi científica</span>
+              <span className="py-2 px-3 flex items-center border border-white hover:border-blue-400 transition-colors">romance</span>
+              <span className="py-2 px-3 flex items-center border border-white hover:border-blue-400 transition-colors">comédia</span>
+              <span className="py-2 px-3 flex items-center border border-white hover:border-blue-400 transition-colors">terror</span>
+              <span className="py-2 px-3 flex items-center border border-white hover:border-blue-400 transition-colors">suspense</span>
+              <span className="py-2 px-3 flex items-center border border-white hover:border-blue-400 transition-colors">ficçãi científica</span>
             </Card>
 
             <Card title="to-do" details="flex flex-col gap-2">
@@ -154,8 +261,13 @@ export default function Home(){
               playlist
             </Card>
 
-            <SimpleCard details="h-52">
-              photos
+            <SimpleCard details="grid grid-cols-3 grid-rows-2 place-items-center gap-5">
+              <img className="border border-white hover:border-blue-500 transition-colors" src="https://i.pinimg.com/originals/f3/86/3c/f3863cb3303473f0214506e1891a2291.gif" alt="one-piece-gif" width={80}/>
+              <img className="border border-white hover:border-blue-500 transition-colors" src="https://i.pinimg.com/736x/0b/97/5a/0b975acc1f0fe6df66fd77f546e35a80.jpg" alt="sally-face-jpg" width={80}/>
+              <img className="border border-white hover:border-blue-500 transition-colors" src="https://i.pinimg.com/originals/b4/08/33/b408334cd4d0940c630c2dcfc8a6a5d4.gif" alt="steven-universo-gif" width={80}/>
+              <img className="h-20 border border-white hover:border-blue-500 transition-colors" src="https://i.pinimg.com/originals/a3/7a/dd/a37add84f8d6a3f321c5656a8479f3c3.gif" alt="mob-gif" width={80}/>
+              <img className="border border-white hover:border-blue-500 transition-colors" src="https://i.pinimg.com/originals/af/70/63/af7063a789c2e357e9c2b17ef8610221.gif" alt="hollander-gif" width={80}/>
+              <img className="border border-white hover:border-blue-500 transition-colors" src="https://i.pinimg.com/1200x/b1/a4/a5/b1a4a5fc9f0c9469860427ae16ec1a91.jpg" alt="chester-jpg" width={80}/>
             </SimpleCard>
           </section>
         </section>
