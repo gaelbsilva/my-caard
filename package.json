@@ -12,6 +12,7 @@
     "@iconify-json/dinkie-icons": "^1.2.0",
     "@iconify-json/pixelarticons": "^1.2.9",
     "@iconify/react": "^6.0.2",
+    "@radix-ui/react-popover": "^1.1.23",
     "next": "16.3.2",
     "react": "19.2.8",
     "react-dom": "19.2.8"
