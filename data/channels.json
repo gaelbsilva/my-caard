@@ -1,15 +1,108 @@
 {
-    "analog-horror": {
-        "1": {
-            "name": "alanzoka",
+    "analog-horror": [
+        {
+            "name": "daishikawa",
+            "img": "daishikawa",
+            "link": ""
+        },
+        {
+            "name": "zedin",
+            "img": "zedin",
+            "link": ""
+        },
+        {
+            "name": "eu hipe",
+            "img": "eu-hipe",
+            "link": ""
+        },
+        {
+            "name": "renatows",
+            "img": "renatows",
+            "link": ""
+        },
+        {
+            "name": "viralquest vq",
             "img": "",
             "link": ""
         }
-    },
-    "general": {
-
-    },
-    "gameplay": {
-
-    }
+    ],
+    "general": [
+        {
+            "name": "kleberiano",
+            "img": "",
+            "link": ""
+        },
+        {
+            "name": "submundo virtual",
+            "img": "",
+            "link": ""
+        },
+        {
+            "name": "jj",
+            "img": "",
+            "link": ""
+        },
+        {
+            "name": "fraguas84",
+            "img": "",
+            "link": ""
+        },
+        {
+            "name": "neon",
+            "img": "",
+            "link": ""
+        },
+        {
+            "name": "engeek",
+            "img": "",
+            "link": ""
+        },
+        {
+            "name": "y6richo",
+            "img": "",
+            "link": ""
+        },
+        {
+            "name": "kitzyy",
+            "img": "",
+            "link": ""
+        }
+    ],
+    "gameplay": [
+        {
+            "name": "alanzoka",
+            "img": "alanzoka",
+            "link": ""
+        },
+        {
+            "name": "bows",
+            "img": "",
+            "link": ""
+        },
+        {
+            "name": "kleberiano games",
+            "img": "",
+            "link": ""
+        },
+        {
+            "name": "jazzghost",
+            "img": "",
+            "link": ""
+        },
+        {
+            "name": "mount",
+            "img": "",
+            "link": ""
+        },
+        {
+            "name": "jao afk",
+            "img": "",
+            "link": ""
+        },
+        {
+            "name": "zedonho",
+            "img": "",
+            "link": ""
+        }
+    ]
 }

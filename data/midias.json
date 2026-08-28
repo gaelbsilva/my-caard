@@ -1,9 +1,110 @@
 {
-    "films":{
-        "1": {
+    "films": [
+        {
             "name": "obssession",
-            "img": "",
-            "link": ""
-        }   
-    }
+            "img": ""
+        },
+        {
+            "name": "10 coisas que odeio em você",
+            "img": ""
+        },
+        {
+            "name": "close",
+            "img": ""
+        },
+        {
+            "name": "fragmentado",
+            "img": ""
+        },
+        {
+            "name": "a voz do silêncio",
+            "img": ""
+        }
+    ],
+    "series": [
+        {
+            "name": "the office",
+            "img": ""
+        },
+        {
+            "name": "brooklyn nine-nine",
+            "img": ""
+        },
+        {
+            "name": "anne com e",
+            "img": ""
+        },
+        {
+            "name": "girl from nowhere",
+            "img": ""
+        },
+        {
+            "name": "you",
+            "img": ""
+        },
+        {
+            "name": "flash",
+            "img": ""
+        }
+    ],
+    "animes": [
+        {
+            "name": "one piece",
+            "img": ""
+        },
+        {
+            "name": "shingeki no kyojin",
+            "img": ""
+        },
+        {
+            "name": "mob psycho 100",
+            "img": ""
+        },
+        {
+            "name": "haikyuu!",
+            "img": ""
+        },
+        {
+            "name": "dr. stone",
+            "img": ""
+        },
+        {
+            "name": "takopi original sin",
+            "img": ""
+        },
+        {
+            "name": "darling in the franxx",
+            "img": ""
+        },
+        {
+            "name": "charlotte",
+            "img": ""
+        }
+    ],
+    "cartoon": [
+        {
+            "name": "gravity falls",
+            "img": ""
+        },
+        {
+            "name": "hora de aventura",
+            "img": ""
+        },
+        {
+            "name": "midnight gospel",
+            "img": ""
+        },
+        {
+            "name": "jovens titãs",
+            "img": ""
+        },
+        {
+            "name": "incrivel mundo de gumball",
+            "img": ""
+        },
+        {
+            "name": "the owl house",
+            "img": ""
+        }
+    ]
 }

@@ -1,9 +1,79 @@
-{
-    "1": {
+[
+    {
         "nome": "sally face",
         "img": "",
         "historia": 100,
         "traco": 90,
+        "jogabilidade": 90
+    },
+    {
+        "nome": "bloons td6",
+        "img": "",
+        "historia": 70,
+        "traco": 100,
+        "jogabilidade": 90
+    },
+    {
+        "nome": "minecraft",
+        "img": "",
+        "historia": 80,
+        "traco": 80,
+        "jogabilidade": 90
+    },
+    {
+        "nome": "fran bow",
+        "img": "",
+        "historia": 90,
+        "traco": 90,
         "jogabilidade": 80
+    },
+    {
+        "nome": "wheel world",
+        "img": "wheel-world",
+        "historia": 80,
+        "traco": 100,
+        "jogabilidade": 100
+    },
+    {
+        "nome": "assassins creed",
+        "img": "",
+        "historia": 90,
+        "traco": 90,
+        "jogabilidade": 100
+    },
+    {
+        "nome": "big walk",
+        "img": "big-walk",
+        "historia": 90,
+        "traco": 100,
+        "jogabilidade": 100
+    },
+    {
+        "nome": "omori",
+        "img": "",
+        "historia": 90,
+        "traco": 90,
+        "jogabilidade": 60
+    },
+    {
+        "nome": "mouthwashing",
+        "img": "mouthwashing",
+        "historia": 90,
+        "traco": 90,
+        "jogabilidade": 80
+    },
+    {
+        "nome": "dangaronpa",
+        "img": "",
+        "historia": 90,
+        "traco": 100,
+        "jogabilidade": 70
+    },
+    {
+        "nome": "fears to fathom",
+        "img": "fears-to-fathom",
+        "historia": 90,
+        "traco": 100,
+        "jogabilidade": 90
     }
-}
+]
