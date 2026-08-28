@@ -22,7 +22,7 @@ export default function Window({ children,  trigger, title, details, button, ali
                 <PopoverPrimitive.Content
                     align={align}
                     sideOffset={8}
-                    className="min-w-60 max-w-96 bg-[#111111] border border-blue-700 z-50"
+                    className="min-w-60 bg-[#111111] border border-blue-700 z-50"
                     >
                     <div className={`bg-blue-700 w-full py-1 px-2 flex justify-between items-center text-white`}>
                         <h3>{title}</h3>

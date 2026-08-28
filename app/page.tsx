@@ -5,11 +5,19 @@ import { Icon } from "@iconify/react";
 import SimpleCard from "@/components/simple-card"
 import Card from "@/components/card";
 import Checkbox from "@/components/checkbox-input";
-import CardMidia from "@/components/card-midia";
 import Window from "@/components/window";
 import Chacacter from "@/components/chacacter";
+import ChannelSection from "@/components/channel-section";
+import MidiaSection from "@/components/midia-section";
+import { useState } from "react";
+import midiaData from '@/data/midias.json'
+import GameSection from "@/components/game-section";
+
+type Categories = keyof typeof midiaData
 
 export default function Home(){
+  const [ category, setCategory ] = useState<Categories>('films')
+
   return(
     <main className="w-full h-screen py-3 overflow-y-auto">
       <article className="w-5xl min-h-full flex flex-col my-5 mx-auto p-2 border border-white">
@@ -97,7 +105,7 @@ export default function Home(){
                       <Chacacter />
                     </button>
                   }>
-                    <p>este sou eu! fiz esta pixel art inspirada nos personagens do jogo omori!</p>
+                    <p className="w-60">este sou eu! fiz esta pixel art inspirada nos personagens do jogo omori!</p>
                   </Window>
                 </div>
 
@@ -112,59 +120,8 @@ export default function Home(){
               </Card>
 
               <div className="w-1/3 text-white flex flex-col justify-between border border-white hover:border-blue-400 transition-colors">
-                <div className="grid grid-cols-2 grid-rows-3 gap-y-3 p-2">
-                  <Window title="/home/analog-horror" align="start" button arrow={false} trigger={
-                    <div className="group flex flex-col items-center text-sm hover:cursor-pointer">
-                      <Icon icon="pixelarticons:folder" className="group-hover:bg-zinc-200/10" width={32} color="#FCC201" />
-                      <p className="group-hover:bg-zinc-200/10">analog-horror</p>
-                    </div>
-                  }>
-                    <div className="w-96 min-h-52 flex p-2 gap-5 text-sm">
-                      <div className="flex flex-col items-center">
-                        <img src="./channels/alanzoka.webp" alt="alanzoka-webp"  width={56}/>
-                        <span>daishikawa.jpg</span>
-                      </div>
-                      <div className="flex flex-col items-center">
-                        <img src="./channels/alanzoka.webp" alt="alanzoka-webp" width={60}/>
-                        <span>zedin.jpg</span>
-                      </div>
-                    </div>
-                  </Window>
-                  <Window title="/home/analog-horror" align="start" button arrow={false} trigger={
-                    <div className="group flex flex-col items-center text-sm hover:cursor-pointer">
-                      <Icon icon="pixelarticons:folder" className="group-hover:bg-zinc-200/10" width={32} color="#FCC201" />
-                      <p className="group-hover:bg-zinc-200/10">geral</p>
-                    </div>
-                  }>
-                    <div className="w-88 min-h-52 flex p-2 gap-5 text-sm">
-                      <div className="flex flex-col items-center">
-                        <img src="./channels/alanzoka.webp" alt="alanzoka-webp"  width={60}/>
-                        <span>kleberiano.jpg</span>
-                      </div>
-                      <div className="flex flex-col items-center">
-                        <img src="./channels/alanzoka.webp" alt="alanzoka-webp" width={60}/>
-                        <span>submundo-virtual.jpg</span>
-                      </div>
-                    </div>
-                  </Window>
-                  <Window title="/home/analog-horror" align="start" button arrow={false} trigger={
-                    <div className="group flex flex-col items-center text-sm hover:cursor-pointer">
-                      <Icon icon="pixelarticons:folder" className="group-hover:bg-zinc-200/10" width={32} color="#FCC201" />
-                      <p className="group-hover:bg-zinc-200/10">gameplay</p>
-                    </div>
-                  }>
-                    <div className="w-88 min-h-52 flex p-2 gap-5 text-sm">
-                      <div className="flex flex-col items-center">
-                        <img src="./channels/alanzoka.webp" alt="alanzoka-webp"  width={60}/>
-                        <span>daishikawa.jpg</span>
-                      </div>
-                      <div className="flex flex-col items-center">
-                        <img src="./channels/alanzoka.webp" alt="alanzoka-webp" width={60}/>
-                        <span>zedin.jpg</span>
-                      </div>
-                    </div>
-                  </Window>
-                </div>
+                <ChannelSection />
+
                 <div className="flex border-t">
                   <Icon className="m-1" icon={'pixelarticons:avatar-square-sharp'} width={20}/>
                   <span className="border-l"></span>
@@ -181,42 +138,35 @@ export default function Home(){
                     <span>my midia</span>
                   </div>
                   <div className="flex flex-col">
-                    <span className="flex items-center pl-7 py-1 gap-2 text-white hover:bg-blue-700/10 cursor-pointer">
+                    <span className={`flex items-center pl-7 py-1 gap-2 text-white hover:bg-blue-700/10 ${category=='films' && 'bg-blue-800/40'} cursor-pointer transition-colors`}
+                      onClick={() => setCategory('films')}>
                       <Icon icon={'pixelarticons:folder-sharp'} width={20} color="fff"/>
                       filmes
                     </span>
-                    <span className="flex items-center pl-7 py-1 gap-2 text-white hover:bg-blue-700/10 cursor-pointer">
+                    <span className={`flex items-center pl-7 py-1 gap-2 text-white hover:bg-blue-700/10 ${category=='series' && 'bg-blue-800/40'} cursor-pointer transition-colors`}
+                      onClick={() => setCategory('series')}>
                       <Icon icon={'pixelarticons:folder-sharp'} width={20} color="fff"/>
                       series
                     </span>
-                    <span className="flex items-center pl-7 py-1 gap-2 text-white hover:bg-blue-700/10 cursor-pointer">
+                    <span className={`flex items-center pl-7 py-1 gap-2 text-white hover:bg-blue-700/10 ${category=='animes' && 'bg-blue-800/40'} cursor-pointer transition-colors`}
+                      onClick={() => setCategory('animes')}>
                       <Icon icon={'pixelarticons:folder-sharp'} width={20} color="fff"/>
                       animes
                     </span>
-                    <span className="flex items-center pl-7 py-1 gap-2 text-white hover:bg-blue-700/10 cursor-pointer">
+                    <span className={`flex items-center pl-7 py-1 gap-2 text-white hover:bg-blue-700/10 ${category=='cartoon' && 'bg-blue-800/40'} cursor-pointer transition-colors`}
+                      onClick={() => setCategory('cartoon')}>
                       <Icon icon={'pixelarticons:folder-sharp'} width={20} color="fff"/>
                       desenhos
                     </span>
                   </div>
                 </div>
 
-                <div className="w-full grid grid-cols-4 grid-rows-2 place-items-center p-2 border border-blue-700">
-                  <CardMidia />
-                  <CardMidia />
-                  <CardMidia />
-                  <CardMidia />
-                  <CardMidia />
-                  <CardMidia />
-                  <CardMidia />
-                  <CardMidia />
-                </div>
+                <MidiaSection category={category} />
               </Card>
             </section>
 
             <section className="flex gap-2">
-              <SimpleCard details="w-md">
-                games
-              </SimpleCard>
+              <GameSection />
 
               <Card title="my hobbies" className="w-full text-white">
                 <ul className="flex flex-col gap-3 list-disc list-inside">
