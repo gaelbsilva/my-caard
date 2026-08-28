@@ -9,6 +9,8 @@
 }
 
 @theme{
+  --font-press-start: var(--font-press-start), monospace;
+
   --animate-bounce-sm: bounce-sm 1s infinite;
 
   @keyframes bounce-sm {
