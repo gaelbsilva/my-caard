@@ -12,6 +12,7 @@ import MidiaSection from "@/components/midia-section";
 import { useState } from "react";
 import midiaData from '@/data/midias.json'
 import GameSection from "@/components/game-section";
+import IconCarousel from "@/components/icon-carousel";
 
 type Categories = keyof typeof midiaData
 
@@ -31,9 +32,7 @@ export default function Home(){
           </SimpleCard>
         </div>
 
-        <SimpleCard details="w-full h-16 my-2">
-          a
-        </SimpleCard>
+        <IconCarousel />
 
         <section className="w-full h-full flex gap-2">
           <section className="w-2/3 h-full flex flex-col gap-2">
@@ -108,15 +107,6 @@ export default function Home(){
                     <p className="w-60">este sou eu! fiz esta pixel art inspirada nos personagens do jogo omori!</p>
                   </Window>
                 </div>
-
-                <div className="flex flex-col items-start gap-5">
-                  <div className="w-18 h-18 bg-blue-700/10 border border-blue-800">
-
-                  </div>
-                  <div className="w-18 h-18 bg-blue-700/10 border border-blue-800">
-
-                  </div>
-                </div>
               </Card>
 
               <div className="w-1/3 text-white flex flex-col justify-between border border-white hover:border-blue-400 transition-colors">
@@ -188,9 +178,27 @@ export default function Home(){
               </div>
             </div>
 
-            <SimpleCard details="h-24">
-              estante
-            </SimpleCard>
+            <div className="w-full h-24 flex justify-center items-end border border-white hover:border-blue-400">
+              <div className="flex w-2/3 items-baseline">
+                <Window title="BOOK" details="flex max-w-80 items-center gap-3" button trigger={
+                  <div className="w-5 h-16 bg-orange-600 hover:border hover:border-white cursor-pointer"></div>
+                }>
+                  <div className="">
+                    <img className="w-54" src="/books/aftg.jpg" alt=""  width={80}/>
+                  </div>
+
+                  <div className="flex flex-col gap-1">
+                    <p className="text-orange-400">a toca das raposas</p>
+                    <p>atualmente estou lendo esta sequencia de livros, parece muito interessante.</p>
+                  </div>
+                </Window>
+          
+              </div>
+
+              <div className="">
+
+              </div>
+            </div>
 
             <Card title="my tags" details="flex flex-wrap gap-2 text-white">
               <span className="py-2 px-3 flex items-center border border-white hover:border-blue-400 transition-colors">romance</span>

@@ -12,6 +12,7 @@
   --font-press-start: var(--font-press-start), monospace;
 
   --animate-bounce-sm: bounce-sm 1s infinite;
+  --animate-carousel: carousel 20s linear infinite;
 
   @keyframes bounce-sm {
     0%, 100% {
@@ -22,6 +23,11 @@
       transform: none;
       animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
+  }
+
+  @keyframes carousel{
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
 }
 
