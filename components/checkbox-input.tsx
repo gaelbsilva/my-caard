@@ -2,12 +2,13 @@ import { Icon } from "@iconify/react";
 
 interface CheckboxProps{
     text: string
+    checked?: boolean
 }
 
-export default function Checkbox({ text }: CheckboxProps){
+export default function Checkbox({ text, checked }: CheckboxProps){
   return(
     <label className="relative inline-flex items-center text-white cursor-pointer">
-      <input type="checkbox" className="peer sr-only" />
+      <input type="checkbox" className="peer sr-only" defaultChecked={checked}/>
       <Icon
         icon="dinkie-icons:ballot-box-with-check-filled"
         className="opacity-0 peer-checked:opacity-100 "

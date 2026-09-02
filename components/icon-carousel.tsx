@@ -5,10 +5,11 @@ import figmaIcon from "@iconify-icons/devicon/figma"
 import gitIcon from "@iconify-icons/devicon/git"
 import vsCodeIcon from "@iconify-icons/devicon/vscode"
 import mintIcon from "@iconify-icons/devicon/linuxmint"
+import tailwindIcon from "@iconify-icons/devicon/tailwindcss"
 import { Icon } from "@iconify/react";
 
 const stacks = [
-    nextIcon, tsIcon, figmaIcon, gitIcon, vsCodeIcon, mintIcon
+    nextIcon, tsIcon, figmaIcon, gitIcon, vsCodeIcon, mintIcon, tailwindIcon
 ]
 
 export default function IconCarousel(){

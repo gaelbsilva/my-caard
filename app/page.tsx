@@ -13,6 +13,8 @@ import { useState } from "react";
 import midiaData from '@/data/midias.json'
 import GameSection from "@/components/game-section";
 import IconCarousel from "@/components/icon-carousel";
+import BookcaseSection from "@/components/bookcase-section";
+import MusicCard from "@/components/music-card";
 
 type Categories = keyof typeof midiaData
 
@@ -27,9 +29,7 @@ export default function Home(){
             <img src="https://i.pinimg.com/originals/12/9c/06/129c062e7e3736fd357396a7f92658d0.gif" width={700} alt="" />
           </div>
 
-          <SimpleCard details="w-1/3 h-40">
-            music
-          </SimpleCard>
+          <MusicCard />
         </div>
 
         <IconCarousel />
@@ -178,27 +178,7 @@ export default function Home(){
               </div>
             </div>
 
-            <div className="w-full h-24 flex justify-center items-end border border-white hover:border-blue-400">
-              <div className="flex w-2/3 items-baseline">
-                <Window title="BOOK" details="flex max-w-80 items-center gap-3" button trigger={
-                  <div className="w-5 h-16 bg-orange-600 hover:border hover:border-white cursor-pointer"></div>
-                }>
-                  <div className="">
-                    <img className="w-54" src="/books/aftg.jpg" alt=""  width={80}/>
-                  </div>
-
-                  <div className="flex flex-col gap-1">
-                    <p className="text-orange-400">a toca das raposas</p>
-                    <p>atualmente estou lendo esta sequencia de livros, parece muito interessante.</p>
-                  </div>
-                </Window>
-          
-              </div>
-
-              <div className="">
-
-              </div>
-            </div>
+            <BookcaseSection />
 
             <Card title="my tags" details="flex flex-wrap gap-2 text-white">
               <span className="py-2 px-3 flex items-center border border-white hover:border-blue-400 transition-colors">romance</span>
@@ -209,7 +189,7 @@ export default function Home(){
             </Card>
 
             <Card title="to-do" details="flex flex-col gap-2">
-              <Checkbox text="nascer" />
+              <Checkbox text="nascer" checked/>
               <Checkbox text="estudar" />
               <Checkbox text="terminar one piece" />
               <Checkbox text="platinar bloons td6" />
