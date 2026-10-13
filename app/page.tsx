@@ -15,6 +15,7 @@ import GameSection from "@/components/game-section";
 import IconCarousel from "@/components/icon-carousel";
 import BookcaseSection from "@/components/bookcase-section";
 import MusicCard from "@/components/music-card";
+import PlaylistCard from "@/components/playlist-card";
 
 type Categories = keyof typeof midiaData
 
@@ -195,9 +196,7 @@ export default function Home(){
               <Checkbox text="platinar bloons td6" />
             </Card>
 
-            <Card title="my playlist" className="h-96">
-              playlist
-            </Card>
+            <PlaylistCard />
 
             <SimpleCard details="grid grid-cols-3 grid-rows-2 place-items-center gap-5">
               <img className="border border-white hover:border-blue-500 transition-colors" src="https://i.pinimg.com/originals/f3/86/3c/f3863cb3303473f0214506e1891a2291.gif" alt="one-piece-gif" width={80}/>
