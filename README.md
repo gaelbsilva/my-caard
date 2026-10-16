@@ -139,8 +139,8 @@ Para mais informações consultar a [Documentação da Web Api](https://develope
 
 ## Preview
 <div align="center">
-    <img src="image.png" alt="Descrição da foto" width="300">
-    <img src="image-1.png" alt="Descrição da foto" width="300">
+    <img src="public/image.png" alt="Descrição da foto" width="300">
+    <img src="public/image-1.png" alt="Descrição da foto" width="300">
 </div>
 <center><i>Responsividade para mobile: em breve</i></center>
 
