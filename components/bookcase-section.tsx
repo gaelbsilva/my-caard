@@ -21,7 +21,7 @@ export default function BookcaseSection(){
                     <div className="w-2 h-13 bg-amber-200 hover:border hover:border-white cursor-pointer"></div>
                 }>
                     <div className="">
-                        <img src="/books/aftg.jpg" alt=""  width={80}/>
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/4/47/O-pequeno-pr%C3%ADncipe.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt=""  width={80}/>
                     </div>
 
                     <div className="flex flex-col gap-1 max-w-60">
@@ -34,7 +34,7 @@ export default function BookcaseSection(){
                     <div className="w-3 h-14 bg-zinc-600 hover:border hover:border-white cursor-pointer"></div>
                 }>
                     <div className="">
-                        <img src="/books/aftg.jpg" alt=""  width={80}/>
+                        <img src="https://static.wikia.nocookie.net/koreanwebtoons/images/1/13/Shotgun_Boy.jpg/revision/latest/scale-to-width-down/300?cb=20220725232904" alt=""  width={80}/>
                     </div>
 
                     <div className="flex flex-col gap-1 max-w-60">
@@ -47,7 +47,7 @@ export default function BookcaseSection(){
                     <div className="w-3 h-16 bg-red-400 hover:border hover:border-white cursor-pointer"></div>
                 }>
                     <div className="">
-                        <img src="/books/aftg.jpg" alt=""  width={80}/>
+                        <img src="https://m.media-amazon.com/images/I/61UHNHKpj+L._AC_UF1000,1000_QL80_.jpg" alt=""  width={80}/>
                     </div>
 
                     <div className="flex flex-col gap-1 max-w-60">

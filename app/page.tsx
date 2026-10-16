@@ -27,7 +27,7 @@ export default function Home(){
       <article className="w-5xl min-h-full flex flex-col my-5 mx-auto p-2 border border-white">
         <div className="w-full flex gap-2">
           <div className={`w-2/3 h-40 overflow-hidden text-white border border-white`} >
-            <img src="https://i.pinimg.com/originals/12/9c/06/129c062e7e3736fd357396a7f92658d0.gif" width={700} alt="" />
+            <img src="https://i.pinimg.com/originals/16/72/20/167220c8946e761f6f8f03a0eb16db50.gif" width={700} alt="" />
           </div>
 
           <MusicCard />
@@ -68,7 +68,7 @@ export default function Home(){
                   <Window title="HEADSET" trigger={
                     <button className="w-18 h-18 flex justify-center items-center bg-blue-700/10 border border-blue-800
                   hover:bg-blue-500/20 hover:border-blue-500 cursor-pointer transition-colors">
-                      <img src="headset.png" alt="" width={50} />
+                      <img src="chacacter/headset.png" alt="" width={50} />
                     </button>
                   }>
                     <p className="w-60">gosto muito de escutar musica! estou escutando sempre que posso.</p>
@@ -76,7 +76,7 @@ export default function Home(){
                   <Window title="HAIR" align="start" trigger={
                     <button className="w-18 h-18 flex justify-center items-center bg-blue-700/10 border border-blue-800
                     hover:bg-blue-500/20 hover:border-blue-500 cursor-pointer transition-colors">
-                      <img src="hair.png" alt="" width={50} />
+                      <img src="chacacter/hair.png" alt="" width={50} />
                     </button>
                   }>
                     <p className="w-60">este é o meu corte de cabelo! ter cabelo grande me incomoda, entao sempre corto ele. eu mesmo sempre corto meu cabelo!</p>
@@ -84,7 +84,7 @@ export default function Home(){
                   <Window title="RING" trigger={
                     <button className="w-18 h-18 flex justify-center items-center bg-blue-700/10 border border-blue-800
                     hover:bg-blue-500/20 hover:border-blue-500 cursor-pointer transition-colors">
-                      <img src="ring.png" alt="" width={50} />
+                      <img src="chacacter/ring.png" alt="" width={50} />
                     </button>
                   }>
                     <p className="w-60">gosto de usar acessorios e principalmente aneis!</p>
@@ -92,7 +92,7 @@ export default function Home(){
                   <Window title="GLASSES" align="center" trigger={
                     <button className="w-18 h-18 flex justify-center items-center bg-blue-700/10 border border-blue-800
                     hover:bg-blue-500/20 hover:border-blue-500 cursor-pointer transition-colors">
-                      <img src="glasses.png" alt="" width={50} />
+                      <img src="chacacter/glasses.png" alt="" width={50} />
                     </button>
                   }>
                     <p className="w-60">possuo miopia e astigmatismo, com 6 graus em cada olho! bastante, nao?</p>

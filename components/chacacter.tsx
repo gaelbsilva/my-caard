@@ -15,6 +15,6 @@ export default function Chacacter(){
     }, [])
 
     return(
-        <img className="cursor-pointer hover:animate-bounce-sm" src={blinking ? 'gael-2.png' : 'gael-1.png'} width={150} alt="chacacter-gael-png" />
+        <img className="cursor-pointer hover:animate-bounce-sm" src={blinking ? 'chacacter/gael-2.png' : 'chacacter/gael-1.png'} width={150} alt="chacacter-gael-png" />
     )
 }
